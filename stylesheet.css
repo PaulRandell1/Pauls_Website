@@ -1,0 +1,47 @@
+/* styling for the main title*/
+h1{
+	font-size: 40px;
+	text-align: center;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+/* styling for the side navigation bar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+	font-size: 150%;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+/* styling for the profile picture */
+img {
+    display:inline-block;
+	max-width: 20%;
+    height: auto;
+	padding-left: 15%;
+}
+
+	
+
