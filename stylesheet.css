@@ -41,7 +41,13 @@ img {
 	max-width: 20%;
     height: auto;
 	padding-left: 15%;
+	float: left;
 }
-
+ 
+ /* styling for the paragraph text */
+ p{
+	 font-size: 150%;
+	 font-family: Tahoma, Geneva, sans-serif;
+ }
 	
 
