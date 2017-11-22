@@ -1,17 +1,12 @@
-/* styling for the main title*/
-h1{
-	font-size: 40px;
-	text-align: center;
-	font-family: Tahoma, Geneva, sans-serif;
+body{
+background-color: #ffffcc;
 }
-
-/* styling for the side navigation bar */
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     width: 15%;
-    background-color: #f1f1f1;
+    background-color: #e9c890;
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -32,22 +27,29 @@ li a.active {
 }
 
 li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
+    background-color: #ffffff;
+    color: black;
 }
-/* styling for the profile picture */
-img {
-    display:inline-block;
-	max-width: 20%;
-    height: auto;
-	padding-left: 15%;
-	float: left;
+	/* styling for the main title*/
+h1{
+	font-size: 40px;
+	text-align: center;
+	font-family: Tahoma, Geneva, sans-serif;
 }
- 
+div{
+	padding-left: 20%;
+}
+
+
  /* styling for the paragraph text */
  p{
-	 font-size: 150%;
+	 font-size: 100%;
 	 font-family: Tahoma, Geneva, sans-serif;
+ }
+ 
+ h2{
+	 font-size:100%;
+	  font-family: Tahoma, Geneva, sans-serif;
  }
 	
 
