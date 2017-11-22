@@ -51,5 +51,15 @@ div{
 	 font-size:100%;
 	  font-family: Tahoma, Geneva, sans-serif;
  }
+ 
+ul p{
+	font-size: 80%;
+}
+
+ul img{
+	height: auto;
+	width: 20%;
+	border-radius: 50%;
+}
 	
 

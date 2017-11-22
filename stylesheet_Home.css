@@ -1,8 +1,9 @@
 /* styling for the profile picture */
-img {
+div img {
     display:inline-block;
 	max-width: 20%;
     height: auto;
 	float: left;
-	border-radius: 50%
+	
 }
+
