@@ -1,7 +1,12 @@
+
+
 body{
-background-color: #ffffcc;
+	background-image: url("Images/background.jpg") ;
+	background-size: cover;
+	color: white
+	
 }
-ul {
+nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -36,6 +41,15 @@ h1{
 	text-align: center;
 	font-family: Tahoma, Geneva, sans-serif;
 }
+h2{
+	 font-size:130%;
+	  font-family: Tahoma, Geneva, sans-serif;
+ }
+ h3{
+	 font-size:100%;
+	  font-family: Tahoma, Geneva, sans-serif;
+ }
+ 
 div{
 	padding-left: 20%;
 }
@@ -47,19 +61,82 @@ div{
 	 font-family: Tahoma, Geneva, sans-serif;
  }
  
- h2{
-	 font-size:100%;
-	  font-family: Tahoma, Geneva, sans-serif;
- }
  
-ul p{
+nav p{
 	font-size: 80%;
 }
 
-ul img{
+nav img{
 	height: auto;
 	width: 20%;
 	border-radius: 50%;
 }
-	
 
+/*.profilepic{
+	border-radius: 50%;	
+	width: 22%;
+	float: left;
+}*/
+
+
+
+.linkedin{
+	border-radius: 0%;
+	width: 80%;
+	height: auto;
+}
+
+
+
+figure {
+  width: 280px;
+  height: 280px;
+  overflow: hidden;
+  float: left;
+}
+
+figure img {
+  width: 100%;
+  background: #eee;
+  margin-bottom: -4em;
+  display: block;
+  float: left;
+}
+	
+/* 
+  styles the figcaption element when the page first loads. The 
+  `transition` property simply "prepares" the element for a style 
+  transition - it does NOT trigger the transition.
+
+  `opacity` affects the WHOLE element - at `.78` text less is harsh when
+  visible. If the alpha channel of the rgba `background` transitioned 
+  instead, the text would not be affected and remain 100% black.
+
+  A `height` of `4em` and `padding` of `.25em` will fit 3 lines of text 
+  with a line-height of 1.2em nicely. For more, change the values.
+*/
+figcaption {
+  box-sizing: border-box;
+  height: 4em;
+  line-height: 1.2em;
+  padding: .25em;
+  transform: translateY(4em);
+  background: #fff;
+  /* background: rgba( 255, 255, 255, 0 ); */
+  opacity: 0;
+  transition: all .5s;
+  
+}
+
+/* 
+  These styles are applied to the `figcaption` element when hovering 
+  over the`figure` element. The `transition` property on `figcaption` 
+  above is then applied to `all` these hover styles, over 0.5 seconds.
+*/
+figure:hover figcaption {
+  transform: translateY(0em);
+  /* background: rgba( 255, 255, 255, .78 ); */
+  opacity: .78;
+
+  
+  

@@ -1,9 +1,0 @@
-/* styling for the profile picture */
-div img {
-    display:inline-block;
-	max-width: 20%;
-    height: auto;
-	float: left;
-	
-}
-
