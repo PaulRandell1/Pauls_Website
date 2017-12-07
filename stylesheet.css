@@ -1,5 +1,5 @@
 
-
+/*styling of the background*/
 html{
 	background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("Images/background.jpg") ;
 	background-size: cover;
@@ -8,11 +8,13 @@ html{
     background-attachment: fixed;
 	
 }
+	
+/*stlying of the navigation bar on the left hand side */
 nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 15%;
+    width: 250px;
     background-color: #b2b2d8;
     position: fixed;
     height: 100%;
@@ -29,6 +31,7 @@ li a {
 }
 li{
 	font-family: Tahoma, Geneva, sans-serif;
+	list-style-type: none;
 }
 
 li a.active {
@@ -40,25 +43,110 @@ li a:hover:not(.active) {
     background-color: #ffffff;
     color: black;
 }
-	/* styling for the main title*/
+.contact
+{
+	padding: 0;
+	font-size:80%;
+} 
+
+/*style for the paragraph text withing the navigation bar*/
+nav p{
+	font-size: 80%;
+}
+/*style for the image in the navigation bar*/
+nav img{
+	height: auto;
+	width: 20%;
+	border-radius: 50%;
+}
+/*style for the linkedin image*/
+.linkedin{
+	border-radius: 0%;
+	width: 80%;
+	height: auto;
+}
+ /*styling for divs to indent them away from the side nav*/
+div{
+	padding-left: 20%;
+	
+}
+
+
+.sidenav {
+    height: 300px;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+	display: none;
+}
+/*close button*/
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: grey;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+@media (max-width:768px)
+{
+		
+	.sidenav
+	{
+		display: block;
+	}
+	nav
+	{
+		display: none;
+	}
+	
+	
+}
+
+/*end of the styling for the side navigation*/
+
+/* styling for the main title*/
 h1{
 	font-size: 40px;
 	text-align: center;
 	font-family: Tahoma, Geneva, sans-serif;
 }
+/*styling for the headings*/
 h2{
 	 font-size:130%;
 	  font-family: Tahoma, Geneva, sans-serif;
  }
+/*styling for subheadings*/
  h3{
 	 font-size:100%;
 	  font-family: Tahoma, Geneva, sans-serif;
  }
- 
-div{
-	padding-left: 20%;
-	
-}
+
 
 
  /* styling for the paragraph text */
@@ -68,34 +156,23 @@ div{
 	 
  }
  
- 
-nav p{
-	font-size: 80%;
-}
-
-nav img{
-	height: auto;
-	width: 20%;
-	border-radius: 50%;
-}
 
 
 
-.linkedin{
-	border-radius: 0%;
-	width: 80%;
-	height: auto;
-}
+#map {
+        height: 400px;
+        width: 70%;
+       }
 
 
-
+/*style for the box containing the profile picture*/
 figure {
   width: 280px;
-  height: 280px;
+  height: 400px;
   overflow: hidden;
   float: left;
 }
-
+/*style for the profile picture*/
 figure img {
   width: 100%;
   background: #eee;
@@ -104,18 +181,7 @@ figure img {
  
 }
 	
-/* 
-  styles the figcaption element when the page first loads. The 
-  `transition` property simply "prepares" the element for a style 
-  transition - it does NOT trigger the transition.
-
-  `opacity` affects the WHOLE element - at `.78` text less is harsh when
-  visible. If the alpha channel of the rgba `background` transitioned 
-  instead, the text would not be affected and remain 100% black.
-
-  A `height` of `4em` and `padding` of `.25em` will fit 3 lines of text 
-  with a line-height of 1.2em nicely. For more, change the values.
-*/
+/* style for the caption that appears over the image*/
 figcaption {
   box-sizing: border-box;
   height: 4em;
@@ -123,32 +189,41 @@ figcaption {
   padding: .25em;
   transform: translateY(4em);
   background: #fff;
-  /* background: rgba( 255, 255, 255, 0 ); */
   opacity: 0;
   transition: all .5s;
   color:black;
   font-family: Tahoma, Geneva, sans-serif;
 }
 
-/* 
-  These styles are applied to the `figcaption` element when hovering 
-  over the`figure` element. The `transition` property on `figcaption` 
-  above is then applied to `all` these hover styles, over 0.5 seconds.
-*/
+
 figure:hover figcaption {
   transform: translateY(0em);
-  /* background: rgba( 255, 255, 255, .78 ); */
   opacity: .78;
 }
 
+figure i
+{
+	padding-left: 110px;
+	color:black;
+}
+
+/*style for the boxes containg the text about education history*/
 .mygrades{
 	float: left;
 	background-color: black;
 	width:auto;
+	padding-left: 20px;
+}
+
+.mygrades1{
+	
+	background-color: black;
+	width:auto;
 	padding-left: 50px;
+	margin-left: 50px;
 }
  
- 
+ /*style for my image slideshow*/
  
  .slideshow {
   margin-left: 2em auto 1em;
@@ -178,12 +253,13 @@ figure:hover figcaption {
 img:nth-child(1) { animation-delay: 8s; }
 img:nth-child(2) { animation-delay: 4s; }
 img:nth-child(3) { animation-delay: 0s; }
+/*end of style for the image slideshow*/
 
-
+/*style for the table*/
 table {
     border-collapse: collapse;
     width: 50%;
-	height:300px;
+	height:400px;
 	background-color:black;
 }
 
@@ -194,9 +270,18 @@ th, td {
 	font-family: Tahoma, Geneva, sans-serif;
 	font-size: 150%;
 }
-
+/*allows the change of the colour within the table when hovered over*/
 tr:hover {
 	background-color:#f5f5f5;
 	color: black;
+}
+/*end of style for the table*/
+
+/* style for the box that holds information about hobbies*/
+.hobbies{
+	float: left;
+	background-color: black;
+	width:50%;
+	padding-left: 20%;
 }
 
