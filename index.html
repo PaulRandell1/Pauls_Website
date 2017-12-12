@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!-- Basis of the page, linking to style sheet and javascript -->
+		<!-- Basis of the page, linking to style sheets -->
 		<title>Paul Randell's Online Portfolio</title>
 		<link href="stylesheet.css" rel="stylesheet" type="text/css" />
-		<link href="=javascript/maps.js" rel="javascript" type="javascript" />
-		<link href="=javascript/sidebar.js" rel="javascript" type="javascript" />
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	</head>
   
@@ -29,25 +27,24 @@
 			<p>p15222442@my365.dmu.ac.uk</p>
 			</div>
 	</nav>
-	
+	<!-- Responsive side bar (this appears after the smallest breakpoint) -->
 	<div id="mySidenav" class="sidenav">
-	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-	  <a href="#">Home</a>
-	  <a href="#">Education</a>
-	  <a href="#">Past Employment</a>
-	  <a href="#">Hobbies and Interests</a>
+		<a href="javascript:void()" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="#home">Home</a>
+		<a href="#education_history">Education</a>
+		<a href="#past_employment">Past Employment</a>
+		<a href="#hobbies">Hobbies and Interests</a>
 	</div>
-	
-	
+	 <script src="javascript/sidebar.js"></script>
+	<span id="open_menu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 	<div>
 		<!-- Main title -->
+		
 		<h1 id="home">Paul Randell's Online Portfolio</h1>
 		
 		<!-- Profile Picture -->
-		
-		
 		<figure>
-			<img src="Images/Profile_Picture.jpg" alt="Profile Picture" class="profilepic">
+			<img src="Images/profile_picture.jpg" alt="Profile Picture" class="profilepic">
 			<figcaption>
 				Paul Randell, 20
 			</figcaption>
@@ -55,8 +52,6 @@
 			<i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i>
 			</a>
 		</figure>
-		
-		
 		
 		
 		<!-- paragraph adjacent to the profile picture	 -->
@@ -96,23 +91,23 @@
 		<div class="mygrades">
 			<h3>2nd year (Pending results)</h3>
 			<ul>
-				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Project Management and Development</li>
-				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> IT Service Management</li>
-				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Systems Thinking</li>
-				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Database Design </li>
-				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Management of ICT </li>
-				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Introduction to Research and Ethics</li>
+				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Project Management and Development: 56%</li>
+				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> IT Service Management: 59%</li>
+				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Systems Thinking: 57%</li>
+				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Database Design: 74%</li>
+				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Management of ICT: 43% </li>
+				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Introduction to Research and Ethics: 68%</li>
 			</ul>
 		</div>
 		<div class="mygrades">
 			<h3>3nd year (Pending results)</h3>
 			<ul>
-				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Project Management and Development</li>
-				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> IT Service Management</li>
-				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Systems Thinking</li>
-				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Database Design </li>
-				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Management of ICT </li>
-				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Introduction to Research and Ethics</li>
+				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Front-End Web Development</li>
+				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Research Methods</li>
+				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Database Management and Programming</li>
+				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Information Systems Strategy and Service</li>
+				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Final Year Project</li>
+				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Computing Ethics</li>
 			</ul>
 		</div>
 		<div class="mygrades1">
@@ -122,26 +117,13 @@
 			<p>Obtained 9 GCSE’s of an A-C grade, including English (c) and Mathematics (b).</p>
 		</div>
 	
-	
+	<!-- Google Maps API to show DMU -->
 	<h2>De Montfort University</h2>
     <div id="map"></div>
-    <script>
-      function initMap() {
-        var uluru = {lat: 52.6291319724, lng: -1.1397671492};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 16,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
+    <script src="javascript/maps.js"></script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf4sriHlEnyB1lxMBbVJOnWjCUlxNP42g&callback=initMap">
     </script>
-	
 	</div>
 	
 	
@@ -188,6 +170,7 @@
 	</div>
 	
 	<!-- Hobbies and interests section -->
+	<div>
 	<div class="hobbies">
 		<h2 id="hobbies">Hobbies And Interests</h2>
 		<p>Sports: I am active and healthy as I go to the gym at least 3 times a week.</p>
@@ -197,16 +180,8 @@
 	</div>
 	<!-- Youtube video -->
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/BLfXd9Su6mw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-  
-  <script>
-  function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-</script>
+  </div>
+ 
   
   </body>
 </html>
