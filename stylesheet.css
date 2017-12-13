@@ -84,6 +84,7 @@ div{
     transition: 0.5s;
     padding-top: 60px;
 	padding-left:0;
+	font-family: Tahoma, Geneva, sans-serif;
 }
 
 .sidenav a {
@@ -208,6 +209,13 @@ figure i
 	width:auto;
 	padding-left: 20px;
 }
+
+.mygrades:hover {
+	background-color:#3f3f3f;
+}
+.mygrades1:hover {
+	background-color:#3f3f3f;
+}	
  
  /*style for my image slideshow*/
  
@@ -223,7 +231,7 @@ figure i
 .slideshow img {
   position: absolute;
   width: 500px;
-  animation: round 16s infinite;
+  animation: round 12s infinite;
   opacity: 0;
 }
 
@@ -321,6 +329,10 @@ tr:hover {
 	{
 		padding-left:0%;
 		display: block;
+	}
+	figure
+	{
+		margin-left: 30%;
 	}
 		
 }
