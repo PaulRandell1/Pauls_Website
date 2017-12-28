@@ -1,338 +1,380 @@
-
 /*styling of the background*/
-html{
-	background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("Images/background.jpg") ;
+
+html {
+	background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("Images/background.jpg");
 	background-size: cover;
 	color: white;
 	background-repeat: no-repeat;
-    background-attachment: fixed;
-	
+	background-attachment: fixed;
 }
-	
+
+
 /*stlying of the navigation bar on the left hand side */
+
 nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 250px;
-    background-color: #000f30;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 250px;
+	background-color: #000f30;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
 	font-size: 150%;
 	font-family: Tahoma, Geneva, sans-serif;
 }
 
 li a {
-    display: block;
-    color: white;
-    padding: 8px 16px;
-    text-decoration: none;
+	display: block;
+	color: white;
+	padding: 8px 16px;
+	text-decoration: none;
 }
-li{
+
+li {
 	font-family: Tahoma, Geneva, sans-serif;
 	list-style-type: none;
 }
 
 li a.active {
-    background-color: #4CAF50;
-    color: white;
+	background-color: #4CAF50;
+	color: white;
 }
 
 li a:hover:not(.active) {
-    background-color: #ffffff;
-    color: black;
+	background-color: #ffffff;
+	color: black;
 }
-.contact
-{
-	padding: 0;
-	font-size:80%;
-} 
 
-/*style for the paragraph text withing the navigation bar*/
-nav p{
+.contact {
+	padding: 0;
 	font-size: 80%;
 }
+
+
+/*style for the paragraph text withing the navigation bar*/
+
+nav p {
+	font-size: 80%;
+}
+
+
 /*style for the image in the navigation bar*/
-nav img{
+
+nav img {
 	height: auto;
 	width: 20%;
 	border-radius: 50%;
 }
+
+
 /*style for the linkedin image*/
-.linkedin{
+
+.linkedin {
 	border-radius: 0%;
 	width: 80%;
 	height: auto;
 }
- /*styling for divs to indent them away from the side nav*/
-div{
+
+
+/*styling for divs to indent them away from the side nav*/
+
+div {
 	padding-left: 20%;
-	
 }
 
-
 .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-	padding-left:0;
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+	padding-left: 0;
 	font-family: Tahoma, Geneva, sans-serif;
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+	color: #f1f1f1;
 }
 
 .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
 }
 
-#open_menu
-{
+#open_menu {
 	position: fixed;
 	display: none;
 }
 
 
-
 /*end of the styling for the side navigation*/
 
+
 /* styling for the main title*/
-h1{
+
+h1 {
 	font-size: 40px;
 	text-align: center;
 	font-family: Tahoma, Geneva, sans-serif;
 }
+
+
 /*styling for the headings*/
-h2{
-	 font-size:130%;
-	  font-family: Tahoma, Geneva, sans-serif;
- }
+
+h2 {
+	font-size: 130%;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+
 /*styling for subheadings*/
- h3{
-	 font-size:100%;
-	  font-family: Tahoma, Geneva, sans-serif;
- }
+
+h3 {
+	font-size: 100%;
+	font-family: Tahoma, Geneva, sans-serif;
+}
 
 
+/* styling for the paragraph text */
 
- /* styling for the paragraph text */
- p{
-	 font-size: 100%;
-	 font-family: Tahoma, Geneva, sans-serif;
-	 
- }
- 
-
-
+p {
+	font-size: 100%;
+	font-family: Tahoma, Geneva, sans-serif;
+}
 
 #map {
-        height: 400px;
-        width: 70%;
-       }
+	height: 400px;
+	width: 70%;
+}
 
 
 /*style for the box containing the profile picture*/
-figure {
-  width: 280px;
-  height: 400px;
-  overflow: hidden;
-  float: left;
-}
-/*style for the profile picture*/
-figure img {
-  width: 100%;
-  background: #eee;
-  margin-bottom: -4em;
-  display: block;
- 
-}
-	
-/* style for the caption that appears over the image*/
-figcaption {
-  box-sizing: border-box;
-  height: 4em;
-  line-height: 1.2em;
-  padding: .25em;
-  transform: translateY(4em);
-  background: #fff;
-  opacity: 0;
-  transition: all .5s;
-  color:black;
-  font-family: Tahoma, Geneva, sans-serif;
+
+#picture {
+	width: 325px;
+	height: 400px;
+	overflow: hidden;
+	float: left;
+	padding-left: 0;
 }
 
+
+/*style for the profile picture*/
+
+figure img {
+	width: 100%;
+	background: #eee;
+	margin-bottom: -4em;
+	display: block;
+}
+
+
+/* style for the caption that appears over the image*/
+
+figcaption {
+	box-sizing: border-box;
+	height: 4em;
+	line-height: 1.2em;
+	padding: .25em;
+	transform: translateY(4em);
+	background: #fff;
+	opacity: 0;
+	transition: all .5s;
+	color: black;
+	font-family: Tahoma, Geneva, sans-serif;
+}
 
 figure:hover figcaption {
-  transform: translateY(0em);
-  opacity: .78;
+	transform: translateY(0em);
+	opacity: .78;
 }
+
+
 /*linkedin square*/
-figure i
-{
-	padding-left: 110px;
-	color:black;
+
+#picture i {
+	padding-left: 140px;
+	color: black;
 }
+
 
 /*style for the boxes containg the text about education history*/
-.mygrades{
+
+
+.flex-container{
+	display:flex;
+	flex-direction: row;
+	background-color: Black;
+	padding-left: 0px;
+}
+.flex-container>div {
+  width: 20%;
+  background-color: #3f3f3f;
+  margin: 10px;
+  padding:20px;
+  border-radius:10px;
+}
+.flex-container>div:hover{
+	background-color: #696969;
+}
+
+
+
+/*style for my image slideshow*/
+
+.slideshow {
+	margin-left: 2em;
+	width: 500px;
+	/* altering this breaks the centering??? */
+	height: 400px;
+	overflow: hidden;
+	position: relative;
 	float: left;
-	background-color: black;
-	width:auto;
-	padding-left: 20px;
-}
-
-.mygrades1{
-	
-	background-color: black;
-	width:auto;
-	padding-left: 20px;
-}
-
-.mygrades:hover {
-	background-color:#3f3f3f;
-}
-.mygrades1:hover {
-	background-color:#3f3f3f;
-}	
- 
- /*style for my image slideshow*/
- 
- .slideshow {
-  margin-left: 2em auto 1em;
-  width: 500px; /* altering this breaks the centering??? */
-  height: 400px;
-  overflow: hidden;
-  position: relative;
-  float: left;
 }
 
 .slideshow img {
-  position: absolute;
-  width: 500px;
-  animation: round 12s infinite;
-  opacity: 0;
+	position: absolute;
+	width: 500px;
+	animation: round 12s infinite;
+	opacity: 0;
 }
 
 @keyframes round {
-  25% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 0;
-  }
+	25% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 0;
+	}
 }
 
-img:nth-child(1) { animation-delay: 8s; }
-img:nth-child(2) { animation-delay: 4s; }
-img:nth-child(3) { animation-delay: 0s; }
+img:nth-child(1) {
+	animation-delay: 8s;
+}
+
+img:nth-child(2) {
+	animation-delay: 4s;
+}
+
+img:nth-child(3) {
+	animation-delay: 0s;
+}
+
+
 /*end of style for the image slideshow*/
 
+
 /*style for the table*/
+
 table {
-    border-collapse: collapse;
-    width: 50%;
-	height:400px;
-	background-color:black;
+	border-collapse: collapse;
+	width: 50%;
+	height: 400px;
+	background-color: black;
 }
 
-th, td {
-    padding: 8px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
+th,
+td {
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
 	font-family: Tahoma, Geneva, sans-serif;
 	font-size: 150%;
 }
+
+
 /*allows the change of the colour within the table when hovered over*/
+
 tr:hover {
-	background-color:#f5f5f5;
+	background-color: #f5f5f5;
 	color: black;
 }
+
+
 /*end of style for the table*/
 
+
 /* style for the box that holds information about hobbies*/
-.hobbies{
+
+.hobbies {
 	float: left;
 	background-color: black;
-	width:50%;
+	width: 550px;
 	padding-left: 10px;
 }
 
+iframe {
+	border: 0;
+	width: 560px;
+	height: 315px;
+}
+
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-@media (max-width: 1300px)
-{
-	div
-	{
-		padding-left:30%;
+	.sidenav {
+		padding-top: 15px;
 	}
-	.mygrades
-	{
-		float:none;
-		width: 400px;
-	}
-	.mygrades1
-	{
-		float:none;
-		width: 400px;
-	}
-	.hobbies
-	{
-		width:500px;
+	.sidenav a {
+		font-size: 18px;
 	}
 }
 
-@media (max-width:1080px)
-{
-		
-	.sidenav
-	{
+@media (max-width: 1300px) {
+	div {
+		padding-left: 30%;
+	}
+	.flex-container{
+		flex-direction:column;
+	}
+	.flex-container>div{
+		width:90%;
+	}
+	.hobbies {
+		width: 500px;
+	}
+}
+
+
+@media (max-width:1080px) {
+	.sidenav {
 		display: block;
 	}
-	nav
-	{
+	nav {
 		display: none;
 	}
-	figure
-	{
-		float:none;
+	#picture {
+		float: none;
+		width: 400px;
+		margin:auto;
 	}
-	div
-	{
-		padding-left:50px;
+	#picture i{
+		padding-left: 220px;
 	}
-	#open_menu
-	{
-		padding-left:0%;
+	div {
+		padding-left: 50px;
+	}
+	#open_menu {
+		padding-left: 0%;
 		display: block;
 	}
-	figure
-	{
+	figure {
 		margin-left: 30%;
 	}
-		
 }

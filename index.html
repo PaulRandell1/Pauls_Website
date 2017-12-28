@@ -1,187 +1,174 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<!-- Basis of the page, linking to style sheets -->
-		<title>Paul Randell's Online Portfolio</title>
-		<link href="stylesheet.css" rel="stylesheet" type="text/css" />
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-	</head>
-  
-  <body>
-    
-	
-	<!-- HTML for side navigation bar -->
-    <nav>
-		<ul>
-			<li><a href="#home">Home</a></li>
-			<li><a href="#education_history">Education</a></li>
-			<li><a href="#past_employment">Past Employment</a></li>
-			<li><a href="#hobbies">Hobbies and Interests</a></li>
-		</ul>
-			<div class="contact">
-			<h2>Contact Me</h2>
-			<img src="Images/Phone.jpg" alt="Phone"> 
-			<p>07864039797</p>
-			<img src="Images/Email.jpg" alt="Email"> 
-			<p>paulrandell123@yahoo.co.uk</p>
-			<p>p15222442@my365.dmu.ac.uk</p>
-			</div>
-	</nav>
-	<!-- Responsive side bar (this appears after the smallest breakpoint) -->
-	<div id="mySidenav" class="sidenav">
-		<a href="javascript:void()" class="closebtn" onclick="closeNav()">&times;</a>
-		<a href="#home">Home</a>
-		<a href="#education_history">Education</a>
-		<a href="#past_employment">Past Employment</a>
-		<a href="#hobbies">Hobbies and Interests</a>
-	</div>
-	 <script src="javascript/sidebar.js"></script>
-	<span id="open_menu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-	<div>
-		<!-- Main title -->
-		
-		<h1 id="home">Paul Randell's Online Portfolio</h1>
-		
-		<!-- Profile Picture -->
-		<figure>
-			<img src="Images/Profile_Picture.JPG" alt="Profile Picture" class="profilepic">
-			<figcaption>
-				Paul Randell, 20
-			</figcaption>
-			<a href="https://www.linkedin.com/in/paul-randell-746ab5130/">
-			<i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i>
-			</a>
-		</figure>
-		
-		
-		<!-- paragraph adjacent to the profile picture	 -->
-		<p>I am currently a 3rd year Information and Communication Technology student at De Montfort University, who enjoys the building database applications, coding and fixing hardware.</p>
-		<h2>Personal Profile </h2>
-		<ul>
-			<li>Good first and second year results: Achieved an average of a 2:1 in first year and a 2:2 second year and on track for a 2:1 in my overall</li>
-			<li>Passionate about technology: I’m very interested in how technology works, and especially fixing problems and creating new things like applications. </li>
-			<li>Punctual: I obtained 100% attendance throughout my educational life from Primary all the way through High school attaining an award for my attendance and maintained that same good attendance throughout university</li>
-			<li>Familiar with industry software: Visual Studio and Oracle </li>
-			<li>Knowledge of coding languages: C# and HTML5</li>
-			<li>Career Objective: Seeking a graduate role to utilise existing skills, improve my skills and learn new ones to enhance my personal and professional development within the world of ICT.</li>
-		</ul>
-		<!-- Paragraph beneath the profile picture -->
-		<h2>Skills</h2>
-		<p>Full EU driving liscence</p>
-		<p>Experiance in coding: HTML5, CSS, JavaScript, C# and SQL. Past projects include databases and websites such as this one</p>
-		<p>Have bulit and repaired my own PC</p>
-		<p>Use of Microsoft office applications on a daily basis</p>
-	</div>
-	<!-- Education History Section -->
-	<div>
-		<h2 id="education_history"> Education </h2>
-		<h3>De Montfort University, 2015 - Present </h3>
-		<p>I am currently a third year student studying Information and Communications Technology</p>
-	
-		<div class="mygrades">
-			<h3>1st year results:</h3>
-			<ul>
-				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Devices and Networks: 62%</li>
-				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Information Systems Development: 54%</li>
-				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Mathematics and Business Management: 80%</li>
-				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Visual Web Development: 71%</li>
-				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Introduction to ICT: 52%</li>
-			</ul>
-		</div>	
-		<div class="mygrades">
-			<h3>2nd year (Pending results)</h3>
-			<ul>
-				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Project Management and Development: 56%</li>
-				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> IT Service Management: 59%</li>
-				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Systems Thinking: 57%</li>
-				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Database Design: 74%</li>
-				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Management of ICT: 43% </li>
-				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Introduction to Research and Ethics: 68%</li>
-			</ul>
-		</div>
-		<div class="mygrades">
-			<h3>3nd year (Pending results)</h3>
-			<ul>
-				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Front-End Web Development</li>
-				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Research Methods</li>
-				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Database Management and Programming</li>
-				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Information Systems Strategy and Service</li>
-				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Final Year Project</li>
-				<li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Computing Ethics</li>
-			</ul>
-		</div>
-		<div class="mygrades1">
-			<h3>Landau Forte Sixth Form Academy QEMS, 2013 - 2015</h3>
-			<p>A Level Results: Applied ICT (c), Sociology (c), Media Studies (d) </p>
-			<h3>The Rawlett School, 2008 -2013</h3>
-			<p>Obtained 9 GCSE’s of an A-C grade, including English (c) and Mathematics (b).</p>
-		</div>
-	
-	<!-- Google Maps API to show DMU -->
-	<h2>De Montfort University</h2>
-    <div id="map"></div>
-    <script src="javascript/maps.js"></script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf4sriHlEnyB1lxMBbVJOnWjCUlxNP42g&callback=initMap">
-    </script>
-	</div>
-	
-	
-		
-	<!-- Emplyment History Section -->
-	<div>
-		<h2 id="past_employment"> Employment History</h2>
-	</div>
-	<!-- Slidshow code -->
-	
-	<div class="slideshow">
-		<img src="Images/King_Power.jpg" alt="" />
-		<img src="Images/Wigginton.jpg" alt="" />
-		<img src="Images/Old_Crown.jpg" alt="" />
-	</div>
-	<!-- Table to show past employment -->
-	<div>
-		<table>
-			<thead>
-				<tr>
-					<th>Company</th>
-					<th>Employment Period</th>
-					<th> Job Description</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>The Wigginton Pub, Tamworth</td>
-					<td>October 2013 to June 2017 </td>
-					<td>Chef/Barman</td>
-				</tr>
-				<tr>
-					<td>Leicester City Football Club</td>
-					<td>September 2015 to June 2017</td>
-					<td>Barman/Furniture Porter</td>
-				</tr>
-				<tr>
-					<td>The Old Crown, Tamworth</td>
-					<td>June 2017 to present</td>
-					<td>Chef/Barman</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-	
-	<!-- Hobbies and interests section -->
-	<div>
-	<div class="hobbies">
-		<h2 id="hobbies">Hobbies And Interests</h2>
-		<p>Sports: I am active and healthy as I go to the gym at least 3 times a week.</p>
-		<p>I am an enthusiastic skateboarder and made a YouTube channel where I edited footage that I filmed to provide a platform for skaters to share what they could do</p>
-		<p>Play for a 6 aside football team: play once a week and this demonstrates my teamwork skills.</p>
-		<p>Young Enterprise: We spent 6 months, making a business and going against other teams from different schools to be the best, through presentations and business plans. In this operation I was the IT specialist making dummy websites and preparing the presentations.</p> 
-	</div>
-	<!-- Youtube video -->
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/BLfXd9Su6mw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-  </div>
- 
-  
-  </body>
+<html lang="en">
+   <head>
+      <!-- Basis of the page, linking to style sheets -->
+      <title>Paul Randell's Online Portfolio</title>
+      <link href="stylesheet.css" rel="stylesheet" type="text/css" />
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+   </head>
+   <body>
+      <!-- HTML for side navigation bar -->
+      <nav>
+         <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#education_history">Education</a></li>
+            <li><a href="#past_employment">Past Employment</a></li>
+            <li><a href="#hobbies">Hobbies and Interests</a></li>
+         </ul>
+         <div class="contact">
+            <h2>Contact Me</h2>
+            <img src="Images/Phone.jpg" alt="Phone"> 
+            <p>07864039797</p>
+            <img src="Images/Email.jpg" alt="Email"> 
+            <p>paulrandell123@yahoo.co.uk</p>
+            <p>p15222442@my365.dmu.ac.uk</p>
+         </div>
+      </nav>
+      <!-- Responsive side bar (this appears after the smallest breakpoint) -->
+      <div id="mySidenav" class="sidenav">
+         <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+         <a href="#home">Home</a>
+         <a href="#education_history">Education</a>
+         <a href="#past_employment">Past Employment</a>
+         <a href="#hobbies">Hobbies and Interests</a>
+      </div>
+      <script src="javascript/sidebar.js"></script>
+      <span id="open_menu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      <div>
+         <!-- Main title -->
+         <h1 id="home">Paul Randell's Online Portfolio</h1>
+         <!-- Profile Picture -->
+         <div id="picture">
+            <figure>
+               <img src="Images/Profile_Picture.JPG" alt="Profile Picture" class="profilepic">
+               <figcaption>
+                  Paul Randell, 20
+               </figcaption>
+            </figure>
+            <a href="https://www.linkedin.com/in/paul-randell-746ab5130/">
+            <i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i>
+            </a>
+         </div>
+         <!-- paragraph adjacent to the profile picture	 -->
+         <p>I am currently a 3rd year Information and Communication Technology student at De Montfort University, who enjoys the building database applications, coding and fixing hardware.</p>
+         <h2>Personal Profile </h2>
+         <ul>
+            <li>Good first and second year results: Achieved an average of a 2:1 in first year and a 2:2 second year and on track for a 2:1 in my overall</li>
+            <li>Passionate about technology: I’m very interested in how technology works, and especially fixing problems and creating new things like applications. </li>
+            <li>Punctual: I obtained 100% attendance throughout my educational life from Primary all the way through High school attaining an award for my attendance and maintained that same good attendance throughout university</li>
+            <li>Familiar with industry software: Visual Studio and Oracle </li>
+            <li>Knowledge of coding languages: C# and HTML5</li>
+            <li>Career Objective: Seeking a graduate role to utilise existing skills, improve my skills and learn new ones to enhance my personal and professional development within the world of ICT.</li>
+         </ul>
+         <!-- Paragraph beneath the profile picture -->
+         <h2>Skills</h2>
+         <p>Full EU driving license</p>
+         <p>Experience in coding: HTML5, CSS, JavaScript, C# and SQL. Past projects include databases and websites such as this one</p>
+         <p>Have built and repaired my own PC</p>
+         <p>Use of Microsoft office applications on a daily basis</p>
+      </div>
+      <!-- Education History Section -->
+      <div>
+         <h2 id="education_history"> Education </h2>
+         <h3>De Montfort University, 2015 - Present </h3>
+         <p>I am currently a third year student studying Information and Communications Technology</p>
+         <div class="flex-container">
+			 <div class="mygrades">
+				<h3>1st year results:</h3>
+				<ul>
+				   <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Devices and Networks: 62%</li>
+				   <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Information Systems Development: 54%</li>
+				   <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Mathematics and Business Management: 80%</li>
+				   <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Visual Web Development: 71%</li>
+				   <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Introduction to ICT: 52%</li>
+				</ul>
+			 </div>
+			 <div class="mygrades">
+				<h3>2nd year</h3>
+				<ul>
+				   <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Project Management and Development: 56%</li>
+				   <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> IT Service Management: 59%</li>
+				   <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Systems Thinking: 57%</li>
+				   <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Database Design: 74%</li>
+				   <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Management of ICT: 43% </li>
+				   <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Introduction to Research and Ethics: 68%</li>
+				</ul>
+			 </div>
+			 <div class="mygrades">
+				<h3>3nd year (Pending results)</h3>
+				<ul>
+				   <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Front-End Web Development</li>
+				   <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Research Methods</li>
+				   <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Database Management and Programming</li>
+				   <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Information Systems Strategy and Service</li>
+				   <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Final Year Project</li>
+				   <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Computing Ethics</li>
+				</ul>
+			 </div>
+			 <div class="mygrades1">
+				<h3>Landau Forte Sixth Form Academy QEMS, 2013 - 2015</h3>
+				<p>A Level Results: Applied ICT (c), Sociology (c), Media Studies (d) </p>
+				<h3>The Rawlett School, 2008 -2013</h3>
+				<p>Obtained 9 GCSE’s of an A-C grade, including English (c) and Mathematics (b).</p>
+			 </div>
+		 </div>
+         <!-- Google Maps API to show DMU -->
+         <h2>De Montfort University</h2>
+         <div id="map"></div>
+         <script src="javascript/maps.js"></script>
+         <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf4sriHlEnyB1lxMBbVJOnWjCUlxNP42g&callback=initMap"></script>
+      </div>
+      <!-- Emplyment History Section -->
+      <div>
+         <h2 id="past_employment"> Employment History</h2>
+      </div>
+      <!-- Slidshow code -->
+      <div class="slideshow">
+         <img src="Images/King_Power.jpg" alt="" />
+         <img src="Images/Wigginton.jpg" alt="" />
+         <img src="Images/Old_Crown.jpg" alt="" />
+      </div>
+      <!-- Table to show past employment -->
+      <div>
+         <table>
+            <thead>
+               <tr>
+                  <th>Company</th>
+                  <th>Employment Period</th>
+                  <th> Job Description</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>The Wigginton Pub, Tamworth</td>
+                  <td>October 2013 to June 2017 </td>
+                  <td>Chef/Barman</td>
+               </tr>
+               <tr>
+                  <td>Leicester City Football Club</td>
+                  <td>September 2015 to June 2017</td>
+                  <td>Barman/Furniture Porter</td>
+               </tr>
+               <tr>
+                  <td>The Old Crown, Tamworth</td>
+                  <td>June 2017 to present</td>
+                  <td>Chef/Barman</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <!-- Hobbies and interests section -->
+      <div>
+         <div class="hobbies">
+            <h2 id="hobbies">Hobbies And Interests</h2>
+            <p>Sports: I am active and healthy as I go to the gym at least 3 times a week.</p>
+            <p>I am an enthusiastic skateboarder and made a YouTube channel where I edited footage that I filmed to provide a platform for skaters to share what they could do</p>
+            <p>Play for a 6 aside football team: play once a week and this demonstrates my teamwork skills.</p>
+            <p>Young Enterprise: We spent 6 months, making a business and going against other teams from different schools to be the best, through presentations and business plans. In this operation I was the IT specialist making dummy websites and preparing the presentations.</p>
+         </div>
+         <!-- Youtube video -->
+         <iframe  src="https://www.youtube.com/embed/BLfXd9Su6mw" allowfullscreen></iframe>
+      </div>
+   </body>
 </html>
